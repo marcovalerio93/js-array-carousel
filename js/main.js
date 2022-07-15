@@ -19,4 +19,30 @@ for (let i = 0; i < imagesArray.length; i++){
 }
 
 const itemList =  document.getElementsByClassName('item');
+
+
 itemList[slideAttiva].classList.add('show');
+
+
+//scooro avanti di una
+
+const next = document.querySelector('.next');
+
+next.addEventListener('click',
+    function (){
+        itemList[slideAttiva].classList.remove('show');
+        slideAttiva++;
+        itemList[slideAttiva].classList.add('show'); 
+    }
+)
+
+//scorro indietro di una
+const pre = document.querySelector('.pre');
+
+next.addEventListener('click',
+    function (){
+        itemList[slideAttiva].classList.remove('show');
+        slideAttiva--;
+        itemList[slideAttiva].classList.add('show'); 
+    }
+)

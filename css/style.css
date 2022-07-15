@@ -19,9 +19,11 @@
 .item{
     width: 50vw;
     height: 50vh;
+    display: none;
 }
-.item.show{
+.item.show {
     display: block;
+
 }
 img{
     width: 100%;
@@ -29,6 +31,7 @@ img{
     object-fit: cover;
 }
 .next{
+    cursor: pointer;
     position:absolute;
     right: 50%;
     bottom: 5%;
@@ -40,6 +43,7 @@ img{
     border-radius: 50%;
 }
 .pre{
+    cursor: pointer;
     position:absolute;
     right: 50%;
     top: 5%;
