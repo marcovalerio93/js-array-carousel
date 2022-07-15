@@ -1,0 +1,32 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    position: relative;
+}
+.slider{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.items{
+    width: 50vw;
+    height: 50vw;
+}
+.next{
+    position:absolute;
+    right: 50%;
+    bottom: 5%;
+}
+.pre{
+    position:absolute;
+    right: 50%;
+    top: 5%;
+}
