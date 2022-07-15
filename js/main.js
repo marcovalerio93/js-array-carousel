@@ -39,7 +39,7 @@ next.addEventListener('click',
 //scorro indietro di una
 const pre = document.querySelector('.pre');
 
-next.addEventListener('click',
+pre.addEventListener('click',
     function (){
         itemList[slideAttiva].classList.remove('show');
         slideAttiva--;
