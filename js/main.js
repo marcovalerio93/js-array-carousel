@@ -8,3 +8,15 @@ const imagesArray = [
     'img/05.jpg',
 
 ]; 
+
+let slideAttiva = 0;
+
+const itemsDom = document.querySelector('.items');
+for (let i = 0; i < imagesArray.length; i++){
+    itemsDom.innerHTML += ` <div class="item"> 
+                                <img src="${imagesArray[i]}"/>
+                            </div>`;
+}
+
+const itemList =  document.getElementsByClassName('item');
+itemList[slideAttiva].classList.add('show');
